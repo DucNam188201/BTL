@@ -1,0 +1,406 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+p{
+	font-size: 20px;
+}
+
+a{
+	text-decoration: none;	
+	color: rgb(252, 252, 252);
+	padding: 0px 20px;
+	line-height: 50px;
+	display: block;
+	font-weight: bold;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+li{
+	list-style: none;
+}
+
+
+
+/* Main */
+
+.main{
+	
+}
+
+.main1{
+	width: 100%;
+	height: 50px;
+	background-color: rgb(6, 44, 116);
+	position: fixed;
+	top: 0px;
+	z-index: 10;
+}
+
+
+
+.main3-anh{
+	margin: 30px 0px 50px 0px;
+}
+
+
+.tieude{
+	width: 931px;
+	height: 40px;
+	margin-top: 20px;
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	opacity: 0.7;
+}
+
+
+.cap1-list,
+#than {
+	display: flex;
+	justify-content: space-around;
+}
+
+
+
+
+.cap1-list> li:hover> a{
+	color: rgb(86, 121, 236);
+}
+.down{
+	position: relative;
+}
+.down .cap2-list{
+	position: absolute;
+}
+.cap2-list{
+	width: 160px;
+	height: 150px;
+	background-color: #0626b3;
+	display: none;
+	border-radius: 4px;
+	animation: fadeIn ease 0.5s;
+}
+.cap2-list>ul>li>a{
+	display: block;
+	width: 120px;
+}
+.cap1-list .down:hover .cap2-list{
+	display: block;
+}
+.cap2-list>ul>li:hover>a{
+	background-color: rgb(134, 170, 236);
+	border-radius: 4px;
+}
+.down1{
+	position: relative;
+}
+
+
+.letrai{
+	padding-left: 35px;
+}
+
+#than{
+	margin-top: 70px;
+}
+
+.main2{
+	width: 931px;
+}
+.main2> img{
+	height: 315px;
+	margin: 0px 5px;
+}
+
+.main2{
+	margin: 20px 5px 5px 35px;
+}
+
+.main2>h3{
+	margin-top: 25px;
+	padding: 0px 290px;
+}
+
+.main2-cuoi{
+	margin-top: 20px;
+	background-color: #F1F1F1;
+}
+
+.main2{
+	float: left;
+}
+
+.dangnhap{
+	margin: 0px 0px 0px 710px;
+	display: flex;
+}
+
+.name__user{
+	position: relative;
+}
+
+.user__icon{
+	background-color: white;
+	color: rgb(0, 0, 0);
+	opacity: 0.7;
+	text-align: center;
+	padding: 8px;
+	border-radius: 20px;
+	margin: 8px 0;
+}
+
+.user__container{
+	position: absolute;
+	display: none;
+	top: 50px;
+	right: 0;
+}
+
+.user{
+	width: 200px;
+	border-radius: 10px;
+	background-color: cornflowerblue;
+	box-shadow: 0px 1px 10px rgb(0, 0, 0, 0.8);
+}
+
+.name__user:hover .user__container{
+	display:block;
+}
+
+.user a{
+	line-height: 36px;
+	text-transform: none;
+	color:rgb(255, 255, 255);
+}
+
+.user a:hover{
+	color: #000;
+}
+
+/* menu cấp 3 */
+.down1{
+	position: relative;
+}
+
+.cap3-list{
+	background-color: #7b7df0;
+	position: absolute;
+	left: 160px;
+	top: 20px;
+	display: none;
+	border-radius: 4px;
+	animation: fadeIn ease 0.5s;
+}
+
+.cap2-list .down1:hover .cap3-list{
+	display: block;
+}
+
+.cap3-list>ul>li:hover>a{
+	background-color: rgb(110, 182, 241);
+}
+
+.cap3-list>ul>li>a{
+	width: 150px;
+}
+
+@keyframes fadeIn {
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+/* Text */
+
+.than__text{
+	line-height: 32px;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 16px;
+	color: rgb(114, 97, 90);
+}
+
+.than__text span{
+	font-weight: 600;
+}
+
+/* css phần giới thiệu 3 khóa học wep */
+
+.khoahoc-container{
+	background-color: #c6dff1;
+}
+
+
+.khoahoc{
+	width: 300px;
+	height: 400px;
+	background-color: #31343d;
+	border-radius: 20px;
+	float: left;
+	margin: 0px 5px 0px 0px;
+	
+}
+
+.khoahoc__img{
+	border-radius: 20px 20px 0px 0px ;
+	height: 200px;
+	width: 300px;
+}
+
+.khoahoc__title{
+	color: #76654f;
+	font-size: 15px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.khoahoc__text{
+	margin: 0px 5px;
+	font-size: 15px;
+	color:#757575;
+}
+
+
+
+/* giới thiệu blog */
+.gioithieu{
+	margin: 40px 80px 40px 35px;
+	height: 300px;
+	background: linear-gradient(to right,#758bf7,#6264f1);
+	border-radius: 30px;
+	transform: translateX(2%);
+}
+
+.gioithieu:hover{
+	box-shadow: 0px 1px 10px rgb(0, 0, 0, 0.8);
+	transform: scale(1.01);
+	transition: transform ease 0.3s;
+}
+
+.gioithieu> .nd{
+	width: 600px;
+	position: absolute;
+	top: 70px;
+	left: 100px;
+}
+.nd>p{
+	color: #757575;
+}
+.gioithieu>.xemchitiet{
+	width: 300px;
+	height: 30px;
+	position:absolute;
+	top: 180px;
+	left: 80px;
+	width: 100px;
+	text-align: center;
+}
+.gioithieu>.xemchitiet>a{
+	width: 100px;
+	line-height: 30px;
+	position: absolute;
+	top: 0xp;
+}
+.gioithieu>.anhblog{
+	position: absolute;
+	right: 120px;
+	top: 40px;
+	
+}
+.gioithieu>.anhblog>img{
+	border-radius: 400px;
+}
+/* chân trang */
+.chantrang,
+.addmin{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 32px;
+	background-color: rgb(6, 44, 116);
+	padding-top: 32px;
+	padding-bottom: 40px; ;
+}
+
+.lienhe{
+	line-height: 32px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.lienhe__title,
+.lienhe > div, 
+.lienket__title,
+.lienket .lienket__list a,
+.link {
+	color: rgba(224, 216, 216, 0.9);
+	font-size: 14px ;
+}
+
+.lienhe__title{
+	font-weight: 400;
+}
+
+
+.email > a{
+	color: rgb(236, 171, 147);
+	text-transform: none;
+}
+
+.email > a:hover,
+.lienket__list > li > a:hover,
+.link__app > i:hover{
+	cursor: pointer;
+	opacity: 0.6;
+}
+
+
+.lienket__list a,
+.lienket__title {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 300;
+}
+
+.lienket__list{
+	margin-left: 16px;
+	margin-top: 8px;
+}
+
+.lienket__list > li{
+	list-style: square;
+	color: antiquewhite;
+}
+
+.lienket__list > li > a{
+	padding: 0;
+	line-height: 28px;
+}
+
+
+
+.link__title{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	margin-bottom: 16px;
+}
+
+.link__app > i{
+	margin-right: 16px;
+	font-size: 30px;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.addmin {
+	margin-top: 0;
+	padding-bottom: 20px;
+	color: cornsilk;
+}
